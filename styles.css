@@ -69,8 +69,39 @@ body::before {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.logo-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.logo-word {
+    color: var(--text-primary);
+    font-weight: 700;
+    text-transform: lowercase;
+}
+
+.logo-zero {
+    display: inline-flex;
+    align-items: center;
+    height: 1.45em;
+    padding: 0 0.55em;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #84fab0, #00c9f5);
+    color: #02110f;
+    font-size: 0.68em;
+    font-weight: 800;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    box-shadow: 0 0 24px rgba(0, 201, 245, 0.18);
 }
 
 .gradient-text {
@@ -648,7 +679,15 @@ body::before {
     }
 
     .logo {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
+    }
+
+    .logo-mark {
+        gap: 0.4rem;
+    }
+
+    .logo-zero {
+        padding: 0 0.45em;
     }
 
     .hero {
@@ -700,15 +739,10 @@ body::before {
 
 .text-muted {
     color: var(--text-secondary) !important;
-}.bid-card.claimed { opacity: 0.5; }
-
-.logo-img {
-    height: 32px;
-    vertical-align: middle;
-    margin-right: 8px;
 }
-@media (max-width: 768px) {
-    .logo-img { height: 24px; }
+
+.bid-card.claimed {
+    opacity: 0.5;
 }
 
 /* How It Works */
@@ -764,17 +798,6 @@ body::before {
     font-size: 1rem;
 }
 
-/* Logo inline alignment */
-.logo {
-    display: flex;
-    align-items: flex-end;
-    gap: 0;
-}
-.logo .logo-img {
-    height: 36px;
-    margin-right: 10px;
-}
 .logo .gradient-text {
     line-height: 1;
-    margin-bottom: 0;
 }
