@@ -65,43 +65,26 @@ body::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
     padding: 1rem;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    gap: 0.55rem;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1;
+    min-width: 0;
     white-space: nowrap;
 }
 
-.logo-mark {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-}
-
-.logo-word {
-    color: var(--text-primary);
-    font-weight: 700;
-    text-transform: lowercase;
-}
-
-.logo-zero {
-    display: inline-flex;
-    align-items: center;
-    height: 1.45em;
-    padding: 0 0.55em;
-    border-radius: 6px;
-    background: linear-gradient(135deg, #84fab0, #00c9f5);
-    color: #02110f;
-    font-size: 0.68em;
-    font-weight: 800;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    box-shadow: 0 0 24px rgba(0, 201, 245, 0.18);
+.brand-logo-img {
+    display: block;
+    width: auto;
+    height: 34px;
+    flex: 0 0 auto;
 }
 
 .gradient-text {
@@ -680,14 +663,16 @@ body::before {
 
     .logo {
         font-size: 1.1rem;
-    }
-
-    .logo-mark {
         gap: 0.4rem;
     }
 
-    .logo-zero {
-        padding: 0 0.45em;
+    .brand-logo-img {
+        height: 25px;
+    }
+
+    .header .btn {
+        padding: 0.65rem 0.9rem;
+        font-size: 0.82rem;
     }
 
     .hero {
